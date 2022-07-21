@@ -46,7 +46,7 @@ function isBalancedv2(s) {
     console.log(convertedInputNumbers);
 
     let i = 0;
-    for (a = 0; a <= convertedInputLength/2; a++) {
+    for (a = 0; a <= convertedInputLength / 2; a++) {
         if (convertedInputNumbers.includes(convertedInputNumbers[i] + 1)) {
             const first = convertedInputNumbers.indexOf(
                 convertedInputNumbers[i],
@@ -62,7 +62,6 @@ function isBalancedv2(s) {
 
     return convertedInputNumbers.length > 0 ? "NO" : "YES";
 }
-
 
 const finalResult = [
     isBalancedv2("{[()]}"),
